@@ -3,7 +3,7 @@
     "y": 0,
     "width": "auto",
     "height": "auto",
-    "type": "custom",
-    "palette": "doom.pal",
+    "type": "auto",
+    "palette": "",
     "scaling": "nearest"
 }
