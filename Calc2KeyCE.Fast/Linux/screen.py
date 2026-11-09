@@ -49,10 +49,10 @@ def init(settings):
 
     if width == 'auto':
         w, h = pyautogui.size()
-        width = w
+        width = w - x
     if height == 'auto':
         w, h = pyautogui.size()
-        height = h
+        height = h - y
     
     if palette_type == 'generic':
         colors = color_tools.generate_palette()
@@ -89,7 +89,7 @@ def screen_thread(device, bulk_out, settings, stop):
             usb_utils.send(device, bulk_out, header)
             usb_utils.send(device, bulk_out, frame)
     except Exception as e:
-        print('Error: device disconnected')
+        print(e)
     finally:
         try:
             header = struct.pack('<i', -1).ljust(64, b'\0')
