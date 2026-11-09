@@ -1,0 +1,9 @@
+{
+    "x": 0,
+    "y": 0,
+    "width": "auto",
+    "height": "auto",
+    "type": "custom",
+    "palette": "doom.pal",
+    "scaling": "nearest"
+}
